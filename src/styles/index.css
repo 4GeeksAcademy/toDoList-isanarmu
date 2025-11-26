@@ -9,3 +9,122 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+h1 {
+    font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+    font-weight: 100;
+    font-size: 96px;
+    color: rgba(200, 150, 150, 0.25);
+    letter-spacing: 2px;
+    justify-self: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+.to-do-list {
+    position: relative;
+    justify-self: center;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 0 15px 3px hsl(56, 10%, 70%);
+}
+
+body {
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #af9797;
+    font-weight: 300;
+    background: hsl(55, 60%, 92%);
+    letter-spacing: 2px;
+
+}
+
+
+.list {
+    padding: 0px;
+}
+
+input:focus {
+    outline: none;
+    border-color: transparent;
+}
+
+input::placeholder {
+    color: #af9797;
+    /* color que prefieras para el placeholder */
+}
+
+.footer {
+    text-align: left;
+    font-size: 13px;
+    border-color: rgb(255, 255, 255);
+    width: 600px;
+    padding: 15px;
+    background-color: hsl(62, 100%, 94%);
+    border: 3px hsl(0, 0%, 72%);
+    display: flex;
+    align-items: center
+}
+
+input[type="text"] {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    border: none;
+    color: #af9797;
+    background-color: hsl(62, 100%, 94%);
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+.to-do-list li {
+    border-top: 1px solid #f0f0f07b;
+    border-bottom: 1px solid #f0f0f07b;
+    padding: 10px 15px;
+}
+
+li {
+    text-align: left;
+    border-color: rgb(255, 255, 255);
+    width: 600px;
+    font-weight: bold;
+    padding: 15px;
+    background-color: hsl(62, 100%, 94%);
+    border: 3px hsl(0, 0%, 72%);
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+}
+
+.delete-button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    background-color: hsl(62, 100%, 94%);
+    color: #af9797;
+    border: none;
+}
+
+.delete-button:hover {
+    background-color: hsl(64, 61%, 87%);
+}
+
+
+.to-do-list::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    right: 6px;
+    bottom: -6px;
+    height: 8px;
+    background-color: hsl(62, 100%, 94%);
+    box-shadow: 0 0 15px 3px hsl(56, 10%, 70%);
+    z-index: -1;
+}
