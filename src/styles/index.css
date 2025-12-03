@@ -104,18 +104,29 @@ li {
     flex: 1;
 }
 
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+
+}
+
 .delete-button {
     padding: 8px 12px;
-    margin-left: 10px;
-    background-color: hsl(62, 100%, 94%);
     color: #af9797;
     border: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, background-color 0.2s ease;
+
 }
 
-.delete-button:hover {
-    background-color: hsl(64, 61%, 87%);
+.task-item:hover .delete-button {
+    opacity: 1;
+    pointer-events: auto;
+     background-color: hsl(62, 100%, 94%);
 }
-
 
 .to-do-list::after {
     content: "";
